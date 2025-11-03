@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background:teal;
+  padding: 20px;
+}
+
+#controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#insertInput,#deleteInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color:black ;
+}
+
+#insertBtn ,#deleteBtn{
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 0 5px #4b47c5;
+}
+
+#treeCanvas {
+  width: 100%;
+  height: 600px;
+  background :#fffff0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+ #deleteBtn:hover {
+  background: #D1E7FF;
+  cursor:pointer;
+  color:red;
+  border:1px solid black;
+}
+#insertBtn:hover{
+  background: #D1E7FF;
+  cursor:pointer;
+  color:green;
+  border:1px solid black;
+}
+
+
+#deleteBtn:active {
+  transform: translateY(2px);  /* moves button slightly down */
+  box-shadow: 0 2px #4b47c5;   /* reduces shadow to mimic press */
+}
+#insertBtn:active {
+  transform: translateY(2px);  /* moves button slightly down */
+  box-shadow: 0 2px #4b47c5;   /* reduces shadow to mimic press */
+}
